@@ -96,7 +96,7 @@ function CreateListing() {
     let geolocation = {}
     if (geolocationEnabled) {
       const response = await fetch(
-        `http://api.positionstack.com/v1/forward?access_key=62889b1888f6e5633e748a35d3fa6a12&query=${address}`
+        `https://api.positionstack.com/v1/forward?access_key=62889b1888f6e5633e748a35d3fa6a12&query=${address}`
       );
       const data = await response.json();
       geolocation.lat = data.data[0].latitude
